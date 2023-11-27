@@ -1,0 +1,28 @@
+/* SimpleTable.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif; /* Change to your desired font */
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Add hover effect */
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  @media only screen and (max-width: 600px) {
+    table {
+      overflow-x: auto;
+    }
+  }
