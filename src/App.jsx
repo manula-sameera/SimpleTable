@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Simple Table Example</h1>
+      <h1>Simple Table</h1>
       <SimpleTable columnDefs={columnDefs} data={tableData} />
     </div>
   );
