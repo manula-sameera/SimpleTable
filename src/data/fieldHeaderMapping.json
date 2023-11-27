@@ -1,0 +1,9 @@
+{
+    "Employee": "employee_name",
+    "EMP Id": "emp_id",
+    "Duration": "duration",
+    "Leave Type": "leave_type",
+    "Reason": "reason",
+    "Manager Name": "manager_name",
+    "Manager Decision": "manager_decision"
+}

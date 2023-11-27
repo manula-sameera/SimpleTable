@@ -1,29 +1,20 @@
-import './App.css';
+// src/App.jsx
+import React from 'react';
+import SimpleTable from './components/SimpleTable';
+import tableHeaders from './data/headers.json';
+import tableData from './data/tableData.json';
+import fieldHeaderMapping from './data/fieldHeaderMapping.json';
 
-function App() {
+const App = () => {
+
+  const columnDefs = tableHeaders.map((header) => ({ header, field: fieldHeaderMapping[header] }));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div>
+      <h1>Simple Table Example</h1>
+      <SimpleTable columnDefs={columnDefs} data={tableData} />
     </div>
   );
-}
+};
 
 export default App;
